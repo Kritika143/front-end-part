@@ -1,0 +1,102 @@
+* {
+  margin: 1;
+  padding: 1;
+  box-sizing: border-box;
+  
+}
+
+body {
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: skyblue;
+    background-size: contain;
+}
+
+.container {
+  width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+  animation: alternate-reverse;
+ 
+}
+
+.form {
+  background-color: white
+    ;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow:  4px 8px ;
+   
+}
+
+.form h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+ 
+}
+
+.input-group {
+  margin-bottom: 50px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.form button {
+  background-color: skyblue
+    ;
+  color: black;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.form button:hover {
+  background-color: blue;
+}
+
+.info {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.info a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.info a:hover {
+  color: #0056b3;
+}
+
+.email-link {
+  text-align: center;
+  padding-right: 20px;
+  margin-top: 20px;
+}
+.email-link a {
+
+  color: blue;
+  text-decoration: none;
+}
