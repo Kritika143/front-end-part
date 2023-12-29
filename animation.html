@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+  body{
+    text-align: center;
+    text-shadow: 2px 2px ;
+    background-color: aqua;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin: 20px;
+  }
+  div{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    animation-name: mypanda;
+    animation-duration: 3s;
+    animation-delay: 1ms;
+    border-radius: 20px solid black;
+    animation-direction:alternate-reverse;
+    animation-iteration-count: infinite;
+  }
+ img {
+    width: 150px;
+   height: 150px;
+    border: 2px solid black;
+    position: relative;
+    animation: mymove 2s infinite;
+  }
+
+ @keyframes mypanda {
+    0%{
+    top: 0px;
+    left: 0px;
+    }
+    25%{
+      top: 0px;
+      left: 1050px;
+    }
+    50%{
+      top: 500px;
+      left: 1050px;
+    }
+    75%{
+      top: 500px;
+      left: 0px;
+    }
+    100%{
+      top: 0px;
+      left: 0px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<h1>The Animated Panda</h1>
+<div><img src="https://media.istockphoto.com/id/1195743934/vector/cute-panda-character-vector-design.jpg?s=1024x1024&w=is&k=20&c=LcrwcA-leFBr3XwDgyf0DT2KpPHa1ahvi558dZfhbg8="></div>
+
+</body>
+</html>
