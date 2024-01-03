@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Blog</title>
+
+	<style>
+        *{
+            padding: 0;
+            margin: 0;
+            position: relative;
+        }
+		body {
+            background-color: white;
+            height: 100%;
+            width: 100%; 
+            position: relative;
+			font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;		
+        }
+        .dropdown .dropbtn {
+          font-size: 16px;  
+          border: 2px solid black;
+          outline: none;
+          color: black;
+          padding: 5px;
+          background-color: inherit;
+          font-family: inherit;
+          margin: 0;
+        }
+       .navbar a:hover, .dropdown:hover .dropbtn {
+          background-color: red;
+        }
+        .dropdown-content {
+           display: none;
+           position: absolute;
+           background-color:white;
+           min-width: 160px;
+           box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+           z-index: 1;
+        }
+        .dropdown-content a {
+         float: none;
+         color: black;
+         padding: 12px 16px;
+         text-decoration: none;
+         display: block;
+         text-align: left;
+        }
+        .dropdown-content a:hover {
+          background-color: #ddd;
+        }
+       .dropdown:hover .dropdown-content {
+         display: block;
+        }
+        .topnav{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end ;
+            height: 30px;
+            width: 270px;
+            padding: 30px;
+            margin-left: 300px;
+        }
+		header {
+
+          display: flex;
+          flex-flow: row;
+          flex-direction: row;
+			background-color: red;
+            height: 100%;
+            width: 100%;
+			text-align: center;
+            font-family:Arial, Helvetica, sans-serif;
+		}
+       .head{
+          margin-left: 555px;
+          justify-content: center; 
+          background-color: red;
+          color: black;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          font-size: 4rem;
+          text-align: center;
+          animation-name: head;
+            animation-duration: 2s;
+            animation-direction: normal;
+            animation-iteration-count: infinite;
+       }
+		nav {
+			background-color: #f2f2f2;
+			padding: 10px;
+            margin: 20px;
+			text-align:center;
+		}
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+		nav li {
+			display: inline-block;
+			margin: 0 10px;
+		}
+		nav a {
+			color: #333;
+			text-decoration: none;
+			padding: 5px;
+		}
+		nav a:hover {
+			background-color: #333;
+			color: #fff;
+		}
+        .name{
+            padding: 0;
+            text-align: center;
+            font-size: 3rem;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .name2{
+            justify-content: center;
+            text-align: center;
+            font-size: 1rem;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+		section {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			padding: 20px;
+		}
+		article {
+			background-color: #f2f2f2;
+			border-radius: 5px;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+			margin-bottom: 20px;
+			padding: 20px;
+			width: 30%;
+		}
+        img{
+          margin-left: 100px;
+          width: 250px;
+          height: 250px;
+        }
+		article h2 {
+            text-align: center;
+			font-size: 1.5em;
+			margin-bottom: 10px;
+
+		}
+		article p {
+            
+			font-size: 1em;
+			line-height: 1.5;
+			margin-bottom: 10px;
+		}
+		footer {
+			background-color:red;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+        img:hover{
+            display: grid;
+            transform: scale(1.2);
+        }
+        @keyframes head{
+            from{
+                color: black;
+            }
+            to{
+                color: white;
+               
+            }
+        }
+	</style>
+</head>
+<body>
+    
+  <header>
+       <nav>
+            
+           <div class="dropdown">
+                <button class="dropbtn">Menu
+                 <i class="fa fa-caret-down"></i>
+                </button>
+               <div class="dropdown-content">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="help.html">Help</a>
+                </div>
+            </div> 
+       </nav>
+       <h1 class="head">Psysic</h1>
+       <div class="topnav">
+       <input type="text" placeholder="Search..">
+   </header>
+   <h2 class="name">Articles</h2>
+ <nav>
+	<ul>
+	<li><a href="#"><strong>Latest</strong></a></li>
+    <li><a href="#"><strong>Popular</strong></a></li>
+    </ul>
+ </nav>
+ <h2 class="name2"><marquee>Longform articles written by serious and creative thinkers on philosophy, psychology, science, society and culture</marquee></h2>
+    
+ <section>  
+	<article>
+       <img src="https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2019/08/01/Pictures/_0ce45ae4-b44e-11e9-895a-bbf3eb4ef5e5.jpg">
+			<h2>Dancing in unity</h2>
+			<p>Legendary dancers unite to present a beautiful performance showcasing vignettes of classical, folk and martial dance forms of India at Charishnu — A Desire To Move</p>
+        <a href="https://www.hindustantimes.com/art-and-culture/dancing-in-unity/story-71nhaBr60f989CrwvWT3vM.html">see here..</a>         
+   </article>
+    
+   <article>
+      <img src="https://uinewz.com/wp-content/uploads/2023/12/Voice-of-Youth-jpg.webp">
+			<h2>Redefining-viksit-bharat</h2>
+			<p>This editorial is based on “The quest for ‘happiness’ in the Viksit Bharat odyssey” which was published in The Hindu on 28/12/2023. The article discusses the concept of happiness induced model of growth and argues that mere achieving economic development is not a true meaning of development.</p>
+		
+     <a href="https://www.drishtiias.com/daily-updates/daily-news-editorials/redefining-viksit-bharat">see here...</a>
+        
+  </article>
+
+   <article>
+      <img src="https://www.drishtiias.com/images/uploads/1703768744_Components_of_Natural_Farming.png">
+			<h2>Plough to Plate: Natural Farming Unleashed</h2>
+			<p>This editorial is based on “Natural farming needs better prices, markets” which was published in The Hindu business line on 27/12/2023. The article discusses the challenges faced by Natural farming and the need of exploring alternative markets to promote natural farming.</p>
+      <a href="https://www.drishtiias.com/daily-updates/daily-news-editorials/plough-to-plate-natural-farming-unleashed">see here...</a>
+   </article>
+
+   <article>
+      <img src="https://cdn1.byjus.com/wp-content/uploads/2016/07/make-in-india-logo-1.png">
+           <h2>Assessing Make in India: Achievements and Challenges</h2>
+           <p>This editorial is based on “There is no substitute for an industrial policy” which was published in The Indian Express on 27/12/2023. The article discusses the Make in India policy and its drawbacks. It also discusses that there is a need of Industrial Policy to create jobs which is an unachieved goal of MII.</p>
+       <a href="https://www.drishtiias.com/daily-updates/daily-news-editorials/assessing-make-in-india-achievements-and-challenges">see here...</a>
+   </article>
+
+   <article>
+        <img src="https://www.hindustantimes.com/ht-img/img/2023/05/02/550x309/India-s-cybersecurity-challenges-can-be-divided-in_1683035049337.jpg">
+           <h2>India's Cybersecurity Challenge: Threats and Strategies    </h2>
+           <p>This editorial is based on “We want a Digital India. Just not the one we are living in” which was published in The Indian Express on 26/12/2023. The article discusses the challenges and opportunities for India in the domain of cyber security, and argues that India needs a new approach that is based on self-reliance, innovation, and collaboration.</p>
+       <a href="https://www.drishtiias.com/daily-updates/daily-news-editorials/india-s-cybersecurity-challenge-threats-and-strategies">see here...</a>
+   </article>
+
+   <article>
+      <img src="https://www.newsclick.in/sites/default/files/styles/responsive_885/public/2021-01/Unepm.PNG?itok=ddhYYyTf">
+         <h2>Solving India's Job Crisis</h2>
+         <p>This editorial is based on “India’s jobs crisis, the macroeconomic reasons” which was published in The Hindu on 25/12/2023. The article discusses that India’s jobs crisis is not only due to the pandemic, but also due to the macroeconomic policies of the government.</p>
+       <a href="https://www.drishtiias.com/daily-updates/daily-news-editorials/solving-india-s-job-crisis">see here...</a>
+    </article>
+</section>
+	<footer>
+		<p>© 2023 My Blog. All rights reserved.</p> 
+
+        <div class="email-link">
+            <a href="mailto:kritikachopra007@gmail.com, samarthinfotech@gmail.com">Contact support</a>
+          </div>
+          <p> DESIGNED BY: KRITIKA CHOPRA @samarthinfotech</p>
+	</footer>
+</body>
+</html>
