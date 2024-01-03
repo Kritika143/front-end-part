@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid template</title>
+    <style>
+        .container{
+            margin: 100px;
+            box-shadow: 20px;
+            position: relative;
+            background-color:rgb(3, 3, 18);
+            height: 500px;
+            width: 500px;
+            padding: 10px;
+            border: 2px solid rgb(3, 3, 83);
+            display: grid;
+            grid grid-template-columns:repeat(auto-file);
+            gap: 1em;
+        }
+        .box{
+            
+            border: 2px black solid;
+        }
+        .side-left{
+            height: 20;
+            width: 10;
+            border: 2px;
+            background-color: green;
+      grid-row-start:1 ;
+      grid-row-end: 4 ;
+      grid-column-start:1  ;
+      grid-column-end: 1;
+
+        }    
+        .top-left{
+            height: 20;
+            width: 10;
+            border: 2px;
+            background-color: green;
+      grid-row-start:1;
+      grid-row-end: 1 ;
+      grid-column-start:2  ;
+      grid-column-end: 4;
+
+        }  
+        .top-right-end{
+            height: 20;
+            width: 10;
+            border: 2px;
+            background-color: red;
+      grid-row-start:1;
+      grid-row-end: 1 ;
+      grid-column-start:4;
+      grid-column-end: 5;
+
+        }  
+        .middle-left{
+            height: 20;
+            width: 10;
+            border: 2px;
+            background-color: orange;
+      grid-row-start:2 ;
+      grid-row-end: 2;
+      grid-column-start:2  ;
+      grid-column-end: 2;
+
+        }  
+        .middle-right{
+            height: 20;
+            width: 10;
+            border: 2px;
+            background-color: red;
+      grid-row-start:2 ;
+      grid-row-end:2 ;
+      grid-column-start:3 ;
+      grid-column-end: 3;
+
+        }  
+        .right-end{
+            height: 20;
+            width: 10;
+            border: 2px;
+            background-color: green;
+      grid-row-start:2 ;
+      grid-row-end:4;
+      grid-column-start:4  ;
+      grid-column-end: 4;
+
+        }  
+        .middle-left2{
+            height: 20;
+            width: 10;
+            border: 2px;
+            background-color: red;
+      grid-row-start:3 ;
+      grid-row-end:3;
+      grid-column-start:2 ;
+      grid-column-end:2;
+
+        }  
+        .middle-right2{
+            height: 20;
+            width: 10;
+            border: 2px;
+            background-color: orange;
+      grid-row-start:3 ;
+      grid-row-end: 3;
+      grid-column-start:3  ;
+      grid-column-end: 4;
+
+        }    
+</style>
+</head>
+<body>
+   <div class="container">
+       <div class="box side-left">side left</div>
+       <div class="box top-left">top left</div>
+       <div class="box top-right-end">top right end</div>
+       <div class="box middle-left">middle left</div>
+       <div class="box middle-right">middle right</div>
+       <div class="box right-end">right end</div>
+       <div class="box middle-left2">middle left</div>
+       <div class="box middle-right2">middle right</div>
+    </div>
+
+</body>
+</html>
